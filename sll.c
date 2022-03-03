@@ -131,3 +131,49 @@ void insert_pos( )
         printf("the new list is: ");
         display( );
 }
+void delete_beg( )
+{
+ temp=head;
+ head=head->next;
+ temp->next=NULL;
+ printf("the new list is: ");
+ display( );
+}
+void delete_end( )
+{
+ temp=head;
+ while(temp->next !=tail)
+ {
+ temp=temp->next;
+ }
+ temp->next=NULL;
+ tail=temp;
+ printf("the new list is: ");
+ display( );
+}
+void delete_pos( )
+{
+ temp=head;
+ int pos,i;
+ printf("Enter the position: ");
+ scanf("%d",&pos);
+ for(i=0;i<pos-1;i++)
+for(i=0;i<pos-1;i++)
+ {
+ temp=temp->next;
+ }
+ temp->next=temp->next->next;
+ printf("the new list is: ");
+ display( );
+}
+void count_nodes( )
+{
+ int count=0;
+ temp=head;
+ while(temp->next !=NULL)
+ {
+ count++;
+ temp=temp->next;
+ }
+ printf("%d",count);
+}
