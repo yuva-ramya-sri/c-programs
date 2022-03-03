@@ -132,3 +132,18 @@ void delete_end()
         temp->next=NULL;
         tail=temp;
         tail->next=head;
+        display();
+}
+void delete_pos()
+{
+ temp=head;
+ int pos,i;
+ printf("enter the position: ");
+ scanf("%d",&pos);
+ for(i=0;i<pos-1;i++)
+ {
+ temp=temp->next;
+ temp->next=temp->next->next;
+ }
+ display();
+}
