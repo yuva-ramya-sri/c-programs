@@ -1,0 +1,54 @@
+struct node
+{
+   int data;
+   struct node*next;
+}*new*temp,*
+void push()
+{
+do                                                                                                       
+{
+new=(struct node *) malloc(sizeof(struct node);
+scanf("%d", &element);                            
+if(top=NULL)
+{
+newdata=element;
+newnext=NULL;
+top=new;}
+else{
+newdata=element;
+newnext=top;
+top=new;
+}}
+}
+int pop()
+{
+if(top==NULL)                                                              
+  {   
+printf("stack is empty");            
+}
+else
+{
+temp=to[;
+ele=topdata;
+printf("%d element is deleted", topdata);
+top=topnext;
+tempnext=NULL;
+free(temp);
+}
+}
+void display()
+{
+if(top==NULL)
+{
+printf("stack is empty");
+}
+else
+{
+temp=top;
+while(temp!=NULL)
+{
+printf("%d", tempdata);
+temp=tempnext;
+}
+}
+
